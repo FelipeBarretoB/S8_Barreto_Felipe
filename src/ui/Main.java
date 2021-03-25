@@ -116,8 +116,6 @@ public class Main {
 		bw.newLine();
 		bw.flush();
 		idNum=br.readLine();
-		
-		
 		mp.addnewPerson(idNum, idType);
 	}
 
