@@ -104,7 +104,6 @@ public class Main {
 		}
 	}
 	
-	
 	public void addId() throws IOException, MinorException, WrongDayException {
 		String idType="";
 		String idNum="";

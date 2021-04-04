@@ -9,7 +9,7 @@ import exceptions.WrongDayException;
 public class ManagePlace {
 	private ArrayList<Id> ids;
 	private LocalDateTime now;
-	DateTimeFormatter dtf;
+	private DateTimeFormatter dtf;
 	 
 	public ManagePlace() {
 		ids=new ArrayList<>();
@@ -28,6 +28,30 @@ public class ManagePlace {
 		}else {
 			ids.add(new Id(Integer.parseInt(idNum),typeOfID));
 		}
+	}
+
+	public ArrayList<Id> getIds() {
+		return ids;
+	}
+
+	public void setIds(ArrayList<Id> ids) {
+		this.ids = ids;
+	}
+
+	public LocalDateTime getNow() {
+		return now;
+	}
+
+	public void setNow(LocalDateTime now) {
+		this.now = now;
+	}
+
+	public DateTimeFormatter getDtf() {
+		return dtf;
+	}
+
+	public void setDtf(DateTimeFormatter dtf) {
+		this.dtf = dtf;
 	}
 	
 	
