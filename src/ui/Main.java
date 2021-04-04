@@ -5,7 +5,6 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
-
 import exceptions.MinorException;
 import exceptions.WrongDayException;
 import model.ManagePlace;
@@ -98,7 +97,7 @@ public class Main {
 			bw.flush();
 			break;
 		default:
-			bw.write("AAAAAAAAAAAAAAAAAAAAAAAAAAAAA \n \n");
+			bw.write("Seleccione una opcion valida \n \n");
 			bw.flush();
 
 		}
@@ -116,6 +115,8 @@ public class Main {
 		bw.flush();
 		idNum=br.readLine();
 		mp.addnewPerson(idNum, idType);
+		bw.write("Se añadio una persona \n \n");
+		bw.flush();
 	}
 
 }
